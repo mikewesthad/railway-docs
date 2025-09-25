@@ -146,6 +146,7 @@ const hashRedirects = [
     source: "/guides/healthchecks-and-restarts#continuous-healthchecks",
     destination: "/guides/healthchecks#continuous-healthchecks",
     permanent: true,
+    status: 901,
   },
 ];
 

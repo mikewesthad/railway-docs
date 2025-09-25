@@ -7,7 +7,7 @@ const pageUrlSet = new Set(allPages.map(page => page.url));
 // This middleware is used to rewrite the pathname to the SSR path during runtime as middleware is not ran during build
 export function middleware(request: NextRequest) {
   if (!pageUrlSet.has(request.nextUrl.pathname)) {
-    return NextResponse.next();
+    return NextResponse();
   }
 
   const url = request.nextUrl.clone();
